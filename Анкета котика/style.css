@@ -1,0 +1,38 @@
+body {
+    background: rgb(255, 226, 226);
+}
+
+.article-teaser {
+    background: rgb(255, 255, 255);
+    border: 10px solid rgb(105, 145, 255);
+    width: 400px;
+    font-family: sans-serif;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.article-teaser .image {
+    width: 100%;
+    
+}
+
+.article-teaser .title,
+.article-teaser .description,
+.article-teaser .readmore {
+    margin: 16px;
+}
+.article-teaser .readmore {
+    display: block;
+    text-decoration: none;
+}
+
+.article-teaser .title,
+.article-teaser .readmore {
+    color: rgb(119, 71, 231);
+}
+
+.article-teaser .title {
+    font-weight: normal;
+    margin-top: 15px;
+    font-size: 25px;
+}
