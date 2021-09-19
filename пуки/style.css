@@ -1,0 +1,42 @@
+body {
+    background-color: #59237e;
+    font-family:sans-serif;
+}
+
+
+
+.menu {
+  color: rgb(231, 231, 231);
+  font-size: 1.6em;
+  list-style: none;
+  float:right;
+  background-color: #c06c84;
+  border:#04094d solid 7px;
+  border-radius: 10px;
+  
+  
+}
+
+.menu > li {
+    float: left;
+    padding:20px;
+    
+}
+
+.menu > li:hover {
+    background-color:#f67280;
+}
+
+.name {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+img {
+    width: 80%;
+    
+}
+
+
