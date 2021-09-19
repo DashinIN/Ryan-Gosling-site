@@ -169,7 +169,7 @@ margin: 0px 0px 15px 0px;
 .item__image img {
     max-width: 100%;
     border: 1px solid skyblue;
-    height: 100%;
+    
     
 }
 .item__row .item__text, .item__row .item__title {
