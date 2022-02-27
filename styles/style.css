@@ -346,5 +346,30 @@ border:1px solid rgb(255, 255, 255);
     .item__row {
         flex-direction:column;
     }  
+}
 
+.pine {
+
+}
+
+.pine__1{
+    width: 0; 
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid greenyellow;
+}
+.pine__2{
+    width: 0; 
+height: 0;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-bottom: 100px solid greenyellow;
+}
+.pine__3{
+    width: 0; 
+height: 0;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+border-bottom: 100px solid greenyellow;
 }
