@@ -17,15 +17,18 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 
 body {
-   
+    --main-color: rgb(238, 238, 238);
+    --second-color: #161748;
+    --dark-color: black;
+    --light-color: white;
+
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(43, 25, 209);
+    background-color: var(--second-color);
 }
 .wrapper {
     min-height: 100%;
     overflow: hidden;
-
-  display: flex;
+    display: flex;
   flex-direction: column;
 }
 .container {
@@ -57,11 +60,39 @@ body {
 }
 
 .hi {
-    background-color: rgb(255, 240, 240);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
     padding: 50px 0;
+    height: 100vh;
 }
+
+.hi > .container {
+    padding: 40px;
+    margin: 0px 30px;
+    background-color: var(--second-color);
+    transition: all 0.3s ease-out;
+}
+
+.hi > .container:hover {
+    background-color: var(--main-color);
+    transition: all 0.3s ease-in;
+
+}
+
+
+
 .hi__body{
-clear:left;
+    color: var(--light-color);
+    clear:left;
+    transition: all 0.3s ease-out;
+}
+
+.hi > .container:hover .hi__body {
+    color: var(--second-color);
+    transition: all 0.3s ease-in;
 }
 
 .hi__row {
@@ -72,7 +103,6 @@ clear:left;
 
 
 .hi__title {
-    text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
     font-size: calc(22px + 14 * ( 100vw / 1180 ));
     margin: 0px 0px 38px 0px;
 }
@@ -80,7 +110,7 @@ clear:left;
 
 
 .hi__list li {
-text-shadow: rgba(0,0,0,0.3);
+text-shadow: var(--second-color);
 font-size: calc(12px + 6 * ( 100vw / 1180 ));
 padding: 0px 0px 0px 36px; 
 margin: 0px 0px 15px 0px;
@@ -89,26 +119,28 @@ margin: 0px 0px 15px 0px;
 .hi__image{
     flex: 0 0 33.333%;
    
-    border: 4px solid rgb(243, 243, 243);  
-    transition: all 0.2s ease-out;
+   outline: 5px solid var(--main-color);  
+    transition: all 0.3s ease-out;
     overflow: hidden;
     
 }
 
-.hi__image:hover {
-    box-shadow: 0px 5px 15px 2px rgb(255, 255, 255);
-   border: 5px solid rgb(20, 5, 153);  
-  transition: all 0.2s ease-in;
+.hi > .container:hover .hi__image {
+
+    outline: 5px solid var(--second-color);
 }
+
 .hi__image img {
     
   max-width:150%;
   max-height: 100%;
  
     
- transition: all 0,2s ease-out;
+ transition: all 0.3s ease-out;
     
 }
+
+
 
 
 .hi__body {
@@ -119,7 +151,7 @@ margin: 0px 0px 15px 0px;
     text-shadow: 3px -1px 8px rgba(0, 0, 0, 0.795);
     font-size: -webkit-calc(16px + 14 * ( 100vw / 1180 ));
     margin: 0px 0px 33px 0px;
-    color:rgb(253, 253, 253);
+    color: var(--light-color);
 }
 
 .what__row {
@@ -134,7 +166,7 @@ margin: 0px 0px 15px 0px;
   
 }
 .what__image img {
-    box-shadow: 0px 5px 53px 2px rgba(255, 255, 255, 0.562);
+   
     max-width: 100%;
     
 }
