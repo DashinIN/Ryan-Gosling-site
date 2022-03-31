@@ -73,27 +73,28 @@ body {
 .hi > .container {
     padding: 40px;
     margin: 0px 30px;
-    background-color: var(--second-color);
-    transition: all 0.3s ease-out;
+    background-color: var(--main-color);
+    transition: background-color 0.3s ease-out;
 }
 
 .hi > .container:hover {
-    background-color: var(--main-color);
-    transition: all 0.3s ease-in;
+    background-color: var(--second-color);
+    transition: background-color 0.3s ease-in;
 
 }
 
 
 
 .hi__body{
-    color: var(--light-color);
+    color: var(--second-color);
     clear:left;
-    transition: all 0.3s ease-out;
+    transition: color 0.3s ease-out;
+    
 }
 
 .hi > .container:hover .hi__body {
-    color: var(--second-color);
-    transition: all 0.3s ease-in;
+    color: var(--light-color);
+    transition: color 0.3s ease-in;
 }
 
 .hi__row {
@@ -119,8 +120,8 @@ margin: 0px 0px 15px 0px;
 
 .hi__image{
     flex: 0 0 33.333%;
-   
-   outline: 5px solid var(--main-color);  
+    background-color: var(--second-color);
+   outline: 5px solid var(--second-color);  
     transition: all 0.3s ease-out;
     overflow: hidden;
     
@@ -128,7 +129,7 @@ margin: 0px 0px 15px 0px;
 
 .hi > .container:hover .hi__image {
     background-color: var(--second-color);
-    outline: 5px solid var(--second-color);
+    outline: 5px solid var(--main-color);
 }
 
 .hi__image img {

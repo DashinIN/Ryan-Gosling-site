@@ -7,7 +7,10 @@ window.onload = function () {
     if (paralax) {
         const headImage = document.querySelector('.paralax__image');
 
-        const forImage = 30;
+        const headText = document.querySelector('.hi__body');
+
+        const forImage = 40;
+        const forText = 50;
         
         const speed = 0.1;
 
@@ -26,6 +29,7 @@ window.onload = function () {
             positionY+=distY*speed;
 
             headImage.style.cssText = `transform: translate(${positionX/forImage}%, ${positionY/forImage}%);`;
+            headText.style.cssText = `transform: translate(${positionX/forText}%, ${positionY/forText}%);`;
 
           requestAnimationFrame(setMouseParalaxStyle);
 
