@@ -33,9 +33,9 @@ body {
   flex-direction: column;
 }
 .container {
-    max-width: 1180px;
+    
     margin: 0px auto;
-    padding: 0 20px
+    padding: 0 20px;
 }
 
 .content {
@@ -71,8 +71,8 @@ body {
 }
 
 .hi > .container {
-    padding: 40px;
-    margin: 0px 30px;
+    padding: 50px;
+    margin: 0px 20px;
     background-color: var(--main-color);
     transition: background-color 0.3s ease-out;
 }
@@ -105,7 +105,8 @@ body {
 
 
 .hi__title {
-    font-size: calc(22px + 14 * ( 100vw / 1180 ));
+    font-size: calc(35px + 20 * ( 100vw / 1180 ));
+    font-weight: semi-bold;
     margin: 0px 0px 38px 0px;
 }
 
@@ -113,7 +114,7 @@ body {
 
 .hi__list li {
 text-shadow: var(--second-color);
-font-size: calc(12px + 6 * ( 100vw / 1180 ));
+font-size: calc(12px + 8 * ( 100vw / 1180 ));
 padding: 0px 0px 0px 36px; 
 margin: 0px 0px 15px 0px;
 }
