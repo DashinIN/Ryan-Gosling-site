@@ -1,2 +1,4 @@
 # Ryan-Gosling-site
-Demonstration: https://dashinin.github.io/Ryan-Gosling-site/
+Clone and run: npm run build, npm start
+
+
