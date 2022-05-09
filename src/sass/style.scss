@@ -15,16 +15,18 @@ img{vertical-align:top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 
 
+$main-color: rgb(238, 238, 238);
+$second-color: #161748;
+$dark-color: black;
+$light-color: white;
+
 
 body {
-    --main-color: rgb(238, 238, 238);
-    --second-color: #161748;
-    --dark-color: black;
-    --light-color: white;
+   
 
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--second-color);
+    background-color: $second-color;
 }
 .wrapper {
     min-height: 100%;
@@ -55,7 +57,7 @@ body {
 .footer__text {
     font-size: 16px;
     letter-spacing: 0.3px;
-    color:cornsilk;
+    color: $light-color;
    
     
 }
@@ -65,7 +67,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--main-color);
+    background-color: $main-color;
     padding: 50px 0;
     min-height: 100vh;
 }
@@ -73,12 +75,12 @@ body {
 .hi > .container {
     padding: 50px;
     margin: 0px 20px;
-    background-color: var(--main-color);
+    background-color: $main-color;
     transition: background-color 0.3s ease-out;
 }
 
 .hi > .container:hover {
-    background-color: var(--second-color);
+    background-color: $second-color;
     transition: background-color 0.3s ease-in;
 
 }
@@ -86,15 +88,15 @@ body {
 
 
 .hi__body{
-    color: var(--second-color);
+    color: $second-color;
     clear:left;
     transition: color 0.3s ease-out;
     
 }
 
 .hi > .container:hover .hi__body {
-    color: var(--light-color);
-    transition: color 0.3s ease-in;
+    color: $light-color;
+    transiion: color 0.3s ease-in;
 }
 
 .hi__row {
@@ -121,21 +123,20 @@ margin: 0px 0px 15px 0px;
 
 .hi__image{
     flex: 0 0 33.333%;
-    background-color: var(--second-color);
-   outline: 5px solid var(--second-color);  
+    background-color: $second-color;
+   outline: 5px solid $second-color;  
     transition: all 0.3s ease-out;
     overflow: hidden;
-    
 }
 
 .hi > .container:hover .hi__image {
-    background-color: var(--second-color);
-    outline: 5px solid var(--main-color);
+    background-color: $second-color;
+    outline: 5px solid $main-color;
 }
 
 .hi__image img {
 
-    background-color: var(--second-color);
+    background-color: $second-color;
     max-width: 150%;
     max-height: 100%;
     
@@ -160,7 +161,7 @@ margin: 0px 0px 15px 0px;
     text-shadow: 3px -1px 8px rgba(0, 0, 0, 0.795);
     font-size: -webkit-calc(16px + 14 * ( 100vw / 1180 ));
     margin: 0px 0px 33px 0px;
-    color: var(--light-color);
+    color: $light-color;
 }
 
 .what__row {
@@ -411,4 +412,6 @@ height: 0;
 border-left: 50px solid transparent;
 border-right: 50px solid transparent;
 border-bottom: 100px solid greenyellow;
-}
+} 
+
+
