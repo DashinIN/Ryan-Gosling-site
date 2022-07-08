@@ -1,4 +1,6 @@
 # Ryan-Gosling-site
-Clone and run: npm install, npm run build, npm start
+
+Ryan Gosling pesonal page
+Watch [here](https://dashinin.github.io/Ryan-Gosling-site/)
 
 
